@@ -16,3 +16,12 @@
 
     // Aktualisiere die Uhrzeiten alle 1 Sekunde
     setInterval(updateClocks, 1000);
+
+    // Karte anzeigen
+    let map = L.map('map').setView([37.8, -96], 4); // Zentrieren der Karte auf die USA
+
+    // Hinzufügen der Kartenlayer (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+      maxZoom: 18,
+    }).addTo(map);
