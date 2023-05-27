@@ -11,6 +11,11 @@ footer {
     font-size: 1rem;
 }
 
+h2{
+  font-size: 25px;
+  font-weight: 700;
+}
+
 #copyright-text {
     text-align: center;
   }
@@ -34,11 +39,17 @@ footer {
 
 }
 
+#date{
+  text-align: center;
+  margin-top: 20px;
+}
+
 #clocks {
   display: flex;
   justify-content: space-around;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-left: 70px;
+  margin-bottom: 50px;
+
 }
 
 .clock {
@@ -46,6 +57,24 @@ footer {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  flex:1;
+  margin-right: 100px;
+  background-color: rgb(252,252,252);
+}
+
+.clock-time {
+  font-size: 1.5rem;
+  color: #333;
+  animation: fade-in 1.0s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #map {
