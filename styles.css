@@ -21,13 +21,22 @@ h2 {
   }
 
   footer a {
-    color: black;
+    color: #ffffff;
     text-decoration: none;
   }
   
   footer a:hover{
     text-decoration: solid;
     color: blue;
+  }
+
+  .icons {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .footer-icons {
+    padding-left: 15px;
   }
 
 #headline {
@@ -68,6 +77,13 @@ h2 {
   animation: fade-in 1.0s ease-in-out;
 }
 
+.card-header {
+  text-align: center;
+}
+
+.card-body {
+  text-align:center;
+}
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -82,3 +98,4 @@ h2 {
   height: 400px;
   position: relative;
 }
+

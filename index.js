@@ -1,3 +1,5 @@
+'use strict';
+
 // Funktion zum Abrufen der aktuellen Uhrzeit
 function getCurrentTime(offset) {
   var date = new Date();
