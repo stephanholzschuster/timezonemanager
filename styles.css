@@ -1,14 +1,14 @@
 body {
-    font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', sans-serif;
 }
 
 footer {
-    padding: 20px 20px;
-    background-color: #007c80;
-    color: #ffffff;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-size: 1rem;
+  padding: 20px 20px;
+  background-color: #007c80;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 h2 {
@@ -17,35 +17,34 @@ h2 {
 }
 
 #copyright-text {
-    text-align: center;
-  }
+  text-align: center;
+}
 
-  footer a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  footer a:hover{
-    text-decoration: solid;
-    color: blue;
-  }
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
 
-  .icons {
-    margin-top: 10px;
-    text-align: center;
-  }
+footer a:hover {
+  text-decoration: solid;
+  color: blue;
+}
 
-  .footer-icons {
-    padding-left: 15px;
-  }
+.icons {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer-icons {
+  padding-left: 15px;
+}
 
 #headline {
-    margin: 5px;
-    padding: 20px 20px;
-    background-color: #007c80;
-    color: #ffffff;
-    text-align: center;
-
+  margin: 5px;
+  padding: 20px 20px;
+  background-color: #007c80;
+  color: #ffffff;
+  text-align: center;
 }
 
 #date {
@@ -58,11 +57,14 @@ h2 {
   justify-content: space-around;
   margin-left: 95px;
   margin-bottom: 50px;
-
 }
 
 .half-width {
   max-width: 90%;
+}
+
+.citySearcher {
+  padding-left: 1%;
 }
 
 .clock {
@@ -70,15 +72,15 @@ h2 {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  flex:1;
+  flex: 1;
   margin-right: 100px;
-  background-color: rgb(252,252,252);
+  background-color: rgb(252, 252, 252);
 }
 
 .clock-time {
   font-size: 1.5rem;
   color: #333;
-  animation: fade-in 1.0s ease-in-out;
+  animation: fade-in 1s ease-in-out;
 }
 
 .card-header {
@@ -86,7 +88,7 @@ h2 {
 }
 
 .card-body {
-  text-align:center;
+  text-align: center;
 }
 @keyframes fade-in {
   from {
@@ -102,4 +104,3 @@ h2 {
   height: 400px;
   position: relative;
 }
-
