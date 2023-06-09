@@ -40,7 +40,7 @@ let map = L.map('map', {
             marker.unbindTooltip();
           });
         })
-        .catch(error => console.log(error));
+        .catch(error => alert(error));
     });
   }
 
@@ -67,8 +67,8 @@ let map = L.map('map', {
           var cityName = city.components.city || city.components.town || city.components.village;
           markCity(lat, lng, cityName);
         } else {
-          console.log('Stadt nicht gefunden');
+          alert('City not found');
         }
       })
-      .catch(error => console.log(error));
+      .catch(error => alert(error));
   }
