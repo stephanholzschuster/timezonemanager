@@ -26,7 +26,9 @@
 </head>
 <body>
 
-  <script defer src='index.js'></script>
+  <script defer src='clock.js'></script>
+  <script defer src='map.js'></script>
+
 
   <div id="headline">
     <h1>Timezones United States of America</h1>
@@ -84,13 +86,28 @@
       </div>
     </div>
   </section>
-  
-  
 
+  <hr>
+  <section class="City Searcher">
+  <div class="form-group half-width">
+    <h4><label for="text">City Searcher</label></h4>
+    <input type="text" class="form-control" id="search" aria-describedby="searchHelp" placeholder="z.B. Denver, Colorado">
+    <small id="emailHelp" class="form-text text-muted">Enter a city, a state, an address, a ZIP-Code</small>
+  </div>
+</section>
 
+<hr>
+<section class="map">
   <div id="map"></div>
+</section>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Opencagedata API -->
+  <script src="https://api.opencagedata.com/geocode/v1/json?key=0c5d895755e046b8bedb0d3fc72c0ce2"></script>
+
+    <!-- TIMEZONEDB API -->
+  <script src="https://api.timezonedb.com/v2.1/get-time-zone?key=2JERXS8XSKOC"></script>
 
 
   <footer>

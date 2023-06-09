@@ -61,6 +61,10 @@ h2 {
 
 }
 
+.half-width {
+  max-width: 90%;
+}
+
 .clock {
   text-align: center;
   padding: 20px;
