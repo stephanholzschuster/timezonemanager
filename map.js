@@ -31,13 +31,19 @@ function markCity(lat, lng, cityName) {
         var currentTime = new Date().toLocaleTimeString('de-DE', {
           timeZone: data.zoneName,
         });
-        marker.bindTooltip(cityName + '<br>' + currentTime).openTooltip();
+
+        var locationText = cityName;
+        if (data.state || data.state_code) {
+          locationText += ', ' + (data.state || data.state_code);
+        }
+
+        marker.bindTooltip(locationText + '<br>' + currentTime).openTooltip();
 
         var updateTooltipTime = function () {
           currentTime = new Date().toLocaleTimeString('de-DE', {
             timeZone: data.zoneName,
           });
-          marker.setTooltipContent(cityName + '<br>' + currentTime);
+          marker.setTooltipContent(locationText + '<br>' + currentTime);
         };
 
         // Aktualisiere die Uhrzeit alle 1 Sekunde
