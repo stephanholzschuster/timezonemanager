@@ -15,10 +15,10 @@ function getCurrentTime(offset) {
   }
   
   // Uhrzeit und Datum einmalig festlegen
-  var sanFranciscoTime = getCurrentTime(-7);
-  var denverTime = getCurrentTime(-6);
-  var dallasTime = getCurrentTime(-5);
-  var newYorkTime = getCurrentTime(-4);
+  var sanFranciscoTime = getCurrentTime(-8);
+  var denverTime = getCurrentTime(-7);
+  var dallasTime = getCurrentTime(-6);
+  var newYorkTime = getCurrentTime(-5);
   
   document.getElementById('currentDate').textContent = denverTime.date;
   document.getElementById('san-francisco-time').textContent = sanFranciscoTime.time;
@@ -28,22 +28,22 @@ function getCurrentTime(offset) {
   
   // Uhrzeiten alle 1 Sekunde aktualisieren
   setInterval(function() {
-    var currentTime = getCurrentTime(-7);
+    var currentTime = getCurrentTime(-8);
     document.getElementById('san-francisco-time').textContent = currentTime.time;
   }, 1000);
   
   setInterval(function() {
-    var currentTime = getCurrentTime(-6);
+    var currentTime = getCurrentTime(-7);
     document.getElementById('denver-time').textContent = currentTime.time;
   }, 1000);
   
   setInterval(function() {
-    var currentTime = getCurrentTime(-5);
+    var currentTime = getCurrentTime(-6);
     document.getElementById('dallas-time').textContent = currentTime.time;
   }, 1000);
   
   setInterval(function() {
-    var currentTime = getCurrentTime(-4);
+    var currentTime = getCurrentTime(-5);
     document.getElementById('new-york-time').textContent = currentTime.time;
   }, 1000);
   
