@@ -99,7 +99,7 @@ function searchCity(query) {
 // Finde den Zurücksetzen-Button
 let resetMapButton = document.getElementById('resetMapButton');
 
-// Setze die Karte auf ihre Ursprungskoordinaten zurück
+// Funktion: Setze die Karte auf ihre Ursprungskoordinaten zurück
 let resetMap = function() {
   map.setView([37.8, -96], 4)
 }
@@ -107,7 +107,7 @@ let resetMap = function() {
 // eventListener wenn der Button "Default View" geklickt wird
 resetMapButton.addEventListener('click', resetMap);
 
-// eventListener, wenn die Taste "V" geklickt wird
+// eventListener wenn die Taste V geklickt wird
 document.addEventListener('keydown', function (e) {
   if (e.code === 'KeyV') {
     resetMap()
@@ -119,31 +119,15 @@ document.addEventListener('keydown', function (e) {
 // Finde den Delete Markers Button
 const clearMarkersButton = document.getElementById('deleteMarkers');
 
-//Lösche alle Marker und gehe in den default View
+// Funktion: Marker löschen
 let clearMarkers = function() {
-
-// TODO: Neben dem Cityname noch den State hinzufügen, zum Beispiel: Denver, Colorado
-
-// Finde den Zurücksetzen-Button
-const resetMapButton = document.getElementById('resetMapButton');
-
-// Füge einen Klick-Event-Listener zum Zurücksetzen-Button hinzu
-resetMapButton.addEventListener('click', function () {
-  // Setze die Karte auf ihre Ursprungskoordinaten zurück
-  map.setView([37.8, -96], 4);
-});
-
-const clearMarkers = document.getElementById('deleteMarkers');
-
-clearMarkers.addEventListener('click', function () {
   map.eachLayer(function (layer) {
     if (layer instanceof L.Marker) {
       map.removeLayer(layer);
     }
-  });
-
-  resetMap();
-});
+    resetMap();
+  })
+}
 
 // eventListener wenn der Button "Delete Markers" geklickt wird
 clearMarkersButton.addEventListener('click', clearMarkers)
@@ -154,7 +138,4 @@ document.addEventListener('keydown', function(e) {
    clearMarkers()
   }
 })
-
-  map.setView([37.8, -96], 4);
-};
 
