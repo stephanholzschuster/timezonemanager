@@ -58,9 +58,9 @@ function markCity(lat, lng, cityName) {
   });
 }
 
-// Eventlistener für die Suchleiste
+// Eventlistener für die CitySearcher
 document.getElementById('search').addEventListener('keydown', function (e) {
-  if (e.keyCode === 13) {
+  if (e.code === 'Enter') {
     // Wenn die Eingabetaste gedrückt wird
     e.preventDefault();
     var query = this.value;
